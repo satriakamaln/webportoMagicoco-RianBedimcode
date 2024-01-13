@@ -29,7 +29,15 @@ const linkAction = () => {
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*=============== SHADOW HEADER ===============*/
+const shadowHeader = () => {
+    const header = document.getElementById("header");
+    // When the scroll is greater than 50 viewport height, add the shadow]
+    this.scrollY >= 50
+        ? header.classList.add("shadow-header")
+        : header.classList.remove("shadow-header");
+};
 
+window.addEventListener("scroll", shadowHeader);
 /*=============== EMAIL JS ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/

@@ -1170,4 +1170,14 @@ body.dark-theme {
         filter: none;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .services__container {
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .projects__container {
+        grid-template-columns: repeat(2, 350px);
+    }
+}
 /* For large devices */
